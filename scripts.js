@@ -11,6 +11,7 @@ const searchButton = document.querySelector("#searchbar > button");
 const lookup = {
   em: "https://webmail.migadu.com/",
   gh: "https://github.com/",
+  cb: "https://codeberg.org/",
   hn: "https://news.ycombinator.com/",
   yt: "https://www.youtube.com/",
   bi: "https://bilibili.com/",
@@ -73,6 +74,11 @@ const bookmarks = [
         id: "daily-github",
         label: "github",
         url: "https://github.com/",
+      },
+      {
+        id: "daily-codeberg",
+        label: "codeberg",
+        url: "https://codeberg.org/",
       },
       {
         id: "daily-hackernews",
