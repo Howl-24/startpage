@@ -21,7 +21,6 @@ const lookup = {
   gmn: "https://gemini.google.com/",
   cld: "https://claude.ai/",
   gpt: "https://chatgpt.com/",
-  cop: "https://copilot.github.com/",
 };
 
 const engine = "duckduckgo";
@@ -137,11 +136,6 @@ const bookmarks = [
         id: "ai-chatgpt",
         label: "chatgpt",
         url: "https://chatgpt.com/",
-      },
-      {
-        id: "ai-copilot",
-        label: "copilot",
-        url: "https://copilot.github.com/",
       },
     ],
   },
