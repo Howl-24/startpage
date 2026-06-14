@@ -9,18 +9,14 @@ const searchInput = document.querySelector("#searchbar > input");
 const searchButton = document.querySelector("#searchbar > button");
 
 const lookup = {
-  em: "https://webmail.migadu.com/",
-  gh: "https://github.com/",
-  cb: "https://codeberg.org/",
-  hn: "https://news.ycombinator.com/",
-  yt: "https://www.youtube.com/",
   bi: "https://bilibili.com/",
+  yt: "https://www.youtube.com/",
   rd: "https://reddit.com/",
   tw: "https://twitter.com/",
-  st: "https://store.steampowered.com/",
-  gmn: "https://gemini.google.com/",
-  cld: "https://claude.ai/",
-  gpt: "https://chatgpt.com/",
+  hn: "https://news.ycombinator.com/",
+  ph: "https://www.phoronix.com/",
+  gh: "https://github.com/",
+  cb: "https://codeberg.org/",
 };
 
 const engine = "duckduckgo";
@@ -61,44 +57,18 @@ searchButton.onclick = search;
 
 const bookmarks = [
   {
-    id: "daily",
-    label: "daily",
-    bookmarks: [
-      {
-        id: "daily-inbox",
-        label: "inbox",
-        url: "https://webmail.migadu.com/",
-      },
-      {
-        id: "daily-github",
-        label: "github",
-        url: "https://github.com/",
-      },
-      {
-        id: "daily-codeberg",
-        label: "codeberg",
-        url: "https://codeberg.org/",
-      },
-      {
-        id: "daily-hackernews",
-        label: "hackernews",
-        url: "https://news.ycombinator.com/",
-      },
-    ],
-  },
-  {
     id: "media",
     label: "media",
     bookmarks: [
       {
-        id: "media-youtube",
-        label: "youtube",
-        url: "https://www.youtube.com/",
-      },
-      {
         id: "media-bilibili",
         label: "bilibili",
         url: "https://bilibili.com/",
+      },
+      {
+        id: "media-youtube",
+        label: "youtube",
+        url: "https://www.youtube.com/",
       },
     ],
   },
@@ -119,23 +89,34 @@ const bookmarks = [
     ],
   },
   {
-    id: "ai",
-    label: "ai",
+    id: "news",
+    label: "news",
     bookmarks: [
       {
-        id: "ai-gemini",
-        label: "gemini",
-        url: "https://gemini.google.com/",
+        id: "news-hackernews",
+        label: "hackernews",
+        url: "https://news.ycombinator.com/",
       },
       {
-        id: "ai-claude",
-        label: "claude",
-        url: "https://claude.ai/",
+        id: "news-phoronix",
+        label: "phoronix",
+        url: "https://www.phoronix.com/",
+      },
+    ],
+  },
+  {
+    id: "dev",
+    label: "dev",
+    bookmarks: [
+      {
+        id: "dev-github",
+        label: "github",
+        url: "https://github.com/",
       },
       {
-        id: "ai-chatgpt",
-        label: "chatgpt",
-        url: "https://chatgpt.com/",
+        id: "dev-codeberg",
+        label: "codeberg",
+        url: "https://codeberg.org/",
       },
     ],
   },
